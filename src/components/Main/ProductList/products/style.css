@@ -1,0 +1,64 @@
+.produtoVitrine {
+  width: 260px;
+  height: 320px;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+.sectionImg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+.sectionImg img {
+  height: 177px;
+}
+.sectionDescricao {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.sectionDescricao h2 {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.sectionDescricao p {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #828282;
+}
+.sectionDescricao h3 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #27ae60;
+}
+.sectionDescricao button {
+  width: 106px;
+  height: 40px;
+  background: #27ae60;
+  border-radius: 8px;
+  border: 2px solid #27ae60;
+  padding: 0px 20px;
+  color: white;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}

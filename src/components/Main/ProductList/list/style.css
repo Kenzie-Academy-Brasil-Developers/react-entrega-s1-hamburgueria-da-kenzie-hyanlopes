@@ -1,0 +1,7 @@
+.vitrineProduct {
+  list-style: none;
+  display: flex;
+  overflow: scroll;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
