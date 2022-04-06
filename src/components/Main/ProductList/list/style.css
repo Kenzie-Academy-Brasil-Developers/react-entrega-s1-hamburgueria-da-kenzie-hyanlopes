@@ -5,3 +5,9 @@
   gap: 10px;
   flex-wrap: nowrap;
 }
+@media (min-width: 1024px) {
+  .vitrineProduct {
+    flex-wrap: wrap;
+    width: 800px;
+  }
+}

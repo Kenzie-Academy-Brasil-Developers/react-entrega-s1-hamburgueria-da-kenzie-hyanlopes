@@ -1,5 +1,6 @@
 import ListaProdutos from "./ProductList/list";
 import MontandoCarrinho from "./Cart/Cart";
+import { useState } from "react";
 import "./style.css";
 const Main = ({
   listaProdutos,
@@ -7,7 +8,9 @@ const Main = ({
   listaCarrinho,
   callBackCart,
   listaFiltroProdutos,
+  callBackRemoveAll,
 }) => {
+  const [inputValue, setInputValue] = useState("");
   return (
     <main>
       <section className="main-ListaProdutos">
@@ -18,7 +21,11 @@ const Main = ({
         />
       </section>
       <section className="main-cartProducts">
-        <MontandoCarrinho listaCarrinho={listaCarrinho} />
+        <MontandoCarrinho
+          listaCarrinho={listaCarrinho}
+          callBack={callBackCart}
+          callBackRemoveAll={callBackRemoveAll}
+        />
       </section>
     </main>
   );

@@ -6,13 +6,13 @@ const ListaProdutos = ({ produtos, callBack, produtoFiltrado, value }) => {
       {produtoFiltrado.length < 1
         ? produtos.map((e) => (
             <>
-              <li key={e.id}>
+              <li className="produtoVitrine" key={e.id}>
                 <Produto produto={e} callBack={callBack} />
               </li>
             </>
           ))
         : produtoFiltrado.map((e) => (
-            <li key={e.id}>
+            <li className="produtoVitrine" key={e.id}>
               <Produto produto={e} callBack={callBack} />
             </li>
           ))}

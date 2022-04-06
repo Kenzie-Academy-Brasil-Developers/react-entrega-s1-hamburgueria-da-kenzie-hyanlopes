@@ -70,3 +70,49 @@
 .ProdutosCarrinho {
   width: 100%;
 }
+.sectionCarrinhoTotal {
+  width: 95%;
+  border-top: 1px solid #e0e0e0;
+}
+.sectionCarrinhoTotal .CarrinhoTotal {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin-top: 5px;
+}
+.sectionCarrinhoTotal .CarrinhoTotal .total {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.sectionCarrinhoTotal .CarrinhoTotal .price {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #828282;
+}
+.sectionCarrinhoTotal .RemoveAll {
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  background: #e0e0e0;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: #828282;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.RemoveAll:hover {
+  background: #828282;
+  color: #e0e0e0;
+  border: #828282;
+}

@@ -5,3 +5,15 @@
 .main-cartProducts {
   margin: 0 auto;
 }
+@media (min-width: 1120px) {
+  main {
+    display: flex;
+  }
+}
+@media (min-width: 1440px) {
+  main {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+}

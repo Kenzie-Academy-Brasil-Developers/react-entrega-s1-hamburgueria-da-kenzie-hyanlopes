@@ -1,6 +1,10 @@
 import AddInCart from "../ProductCart";
 import "./style.css";
-const MontandoCarrinho = ({ listaCarrinho }) => {
+const MontandoCarrinho = ({ listaCarrinho, callBack, callBackRemoveAll }) => {
+  const totalPrice = listaCarrinho.reduce(
+    (acc, e) => acc + Number(e.produto.price) * e.quantity,
+    0
+  );
   return (
     <section className="Carrinho">
       <aside className="CarrinhoTitulo">
@@ -10,20 +14,17 @@ const MontandoCarrinho = ({ listaCarrinho }) => {
         <section className="CarrinhoCheio">
           <ul className="productInCart">
             {listaCarrinho.map((e) => (
-              <AddInCart produto={e} />
+              <AddInCart produto={e} callBack={callBack} />
             ))}
           </ul>
-          <section>
+          <section className="sectionCarrinhoTotal">
             <aside className="CarrinhoTotal">
               <p className="total">Total</p>
-              <p className="price">
-                {listaCarrinho.reduce(
-                  (acc, e) => acc + Number(e.produto.price) * e.quantity,
-                  0
-                )}
-              </p>
+              <p className="price">R$ {totalPrice.toFixed(2)}</p>
             </aside>
-            <button className="RemoveAll">Remover todos</button>
+            <button onClick={callBackRemoveAll} className="RemoveAll">
+              Remover todos
+            </button>
           </section>
         </section>
       ) : (

@@ -1,5 +1,5 @@
 import "./style.css";
-const AddInCart = ({ produto }) => {
+const AddInCart = ({ produto, callBack }) => {
   return (
     <li className="produtoDoCarrinho">
       <section className="produtoCartImg">
@@ -9,9 +9,9 @@ const AddInCart = ({ produto }) => {
         <h3>{produto.produto.name}</h3>
         <p>{produto.produto.category}</p>
       </section>
-      <section>
-        <button>Remover</button>
-        <p>Qtd : {produto.quantity}</p>
+      <section className="produtoCartRemove">
+        <button onClick={() => callBack(produto)}>Remover</button>
+        <p>{produto.quantity}</p>
       </section>
     </li>
   );
